@@ -1,4 +1,6 @@
 #include "lex.h"
+#include "token.h"
+#include<iostream>
 using namespace std;
 
 
@@ -17,12 +19,13 @@ std::string Lexer::peek()
 	{
 		return "\0";
 	}
-	return this->source.substr(;
+	return this->source.substr(curPos+1,1);
 }
 
 void Lexer::nextChar()
 {
 	//iterate to next character
+	//cout<<this->curChar;
 	this->curPos += 1;
 	if (this->curPos >= this->source.length())
 	{
@@ -48,4 +51,33 @@ void Lexer::skipComment()
 
 void Lexer::getToken()
 {
+	if (this->curChar == "+")
+	{
+
+	}
+	else if (this->curChar == "-")
+	{
+
+	}
+	else if (this->curChar == "-")
+	{
+
+	}
+	else if (this->curChar == "-")
+	{
+
+	}
+	else if (this->curChar == "-")
+	{
+
+	}
+	else if (this->curChar == "-")
+	{
+
+	}
+	this->nextChar();
+}
+std::string Lexer::getCurChar()
+{
+	return this->curChar;
 }
