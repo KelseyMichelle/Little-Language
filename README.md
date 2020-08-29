@@ -1,5 +1,5 @@
 # Little-Language
-C++ Implementation of the Teeny Tiny compiler
+C++ Implementation of the Teeny Tiny compiler, an interpreter based on the BASIC programming language.
 
 Provided implementation modified as needed to enact better encapsulation.
 
