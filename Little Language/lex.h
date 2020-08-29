@@ -1,6 +1,6 @@
 #pragma once
 #include<string>
-
+#include "token.h"
 //header file for lexer
 #ifndef lexer
 #define lexer
@@ -18,7 +18,7 @@ public:
 	void abort();
 	void skipWhitespace();
 	void skipComment();
-	void getToken();
+	Token getToken();
 	std::string getCurChar();
 };
 
